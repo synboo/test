@@ -1,0 +1,35 @@
+<!doctype html>
+<title>socket.io test!</title>
+
+<h1>socket.io test!</h1>
+<input type="text" style="width: 300px;" onkeydown="if(event.keyCode===13)submit(this)">
+<div id="timeline" style="border: solid 1px; margin: 20px 0; min-height: 300px;"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="socket.io.js"></script>
+<script>
+var socket = io.connect('http://localhost:8080');
+
+socket.on('connect', function () {
+    console.log('client connected!!');
+});
+
+// event from server
+// receive self emitted event
+socket.on('a', function (data) {
+    $('#timeline').append('<p>'+data+'</p>');
+    console.log('a: '+data);
+});
+// receive bloadcastted event
+socket.on('b', function (data) {
+    $('#timeline').append('<p>'+data+'</p>');
+    console.log('b: '+data);
+});
+
+function submit(text) {
+    var message = text.value;
+    // send message from client to server
+    socket.emit('sendMessage', message);
+    text.value = '';
+}
+</script>

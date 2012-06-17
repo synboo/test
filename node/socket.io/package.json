@@ -1,0 +1,18 @@
+{
+  "author": "synboo",
+  "name": "socket.io",
+  "description": "test application with socket.io",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/synboo/test.git"
+  },
+  "dependencies": {
+    "socket.io": ">=0.9.6"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
