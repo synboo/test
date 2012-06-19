@@ -8,7 +8,8 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="socket.io.js"></script>
 <script>
-var socket = io.connect('http://localhost:8080');
+var host = document.location.host,
+    socket = io.connect('http://'+host+':8080');
 
 socket.on('connect', function () {
     console.log('client connected!!');
