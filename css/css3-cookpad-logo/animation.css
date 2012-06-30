@@ -1,0 +1,17 @@
+#bg-circle {
+	margin-top: 200px;
+	margin-left: 200px;
+}
+@-webkit-keyframes rotate {
+0% {-webkit-transform: rotate(0deg) rotateY(0) scale(1)}
+70% {-webkit-transform: rotate(720deg) rotateY(0) scale(2)}
+90% {-webkit-transform: rotate(720deg) rotateY(0) scale(2)}
+100% {-webkit-transform: rotate(720deg) rotateY(360deg) scale(2)}
+}
+@-webkit-keyframes fade {
+0% {opacity: 0;}
+50% {opacity: 0.6;}
+70% {opacity: 0.9;}
+90% {opacity: 0.9;}
+100% {opacity: 0;}
+}

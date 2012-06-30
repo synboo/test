@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #EEC;
+}
+#bg-circle {
+	margin-top: 40px;
+	margin-left: 40px;
+	border: solid 12px #310607;
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	background-color: #F29437;
+	width: 300px;
+	height: 300px;
+
+	-webkit-animation-name: rotate,fade;
+	-webkit-animation-iteration-count: 5;	
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 8s;
+}
+.top-circle {
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	height: 80px;
+	width: 80px;
+	background-color: #FFF;
+	border: solid 12px #310607;
+	position: relative;
+}
+#top-left {
+	top: 60px;
+	left: 30px;
+}
+#top-center {
+	top: -60px;
+	left: 100px;
+}
+#top-right {
+	top: -140px;
+	left: 170px;
+}
+.side {
+	transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	-webkit-transform: rotate(6deg);
+	-o-transform: rotate(6deg);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #310607;
+	position: relative;
+	width: 12px;
+}
+#side-left {
+	height: 102px;
+	top: -471px;
+	left: 64px;
+}
+#side-right {
+	height: 120px;
+	top: -583px;
+	left: 207px;
+}
+.bottom {
+	background-color: #310607;
+	position: relative;
+	height: 12px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+#bottom-top {
+	width: 125px;
+	top: -624px;
+	left: 85px;
+}
+#bottom-bottom {
+	width: 155px;
+	top: -607px;
+	left: 59px;
+}
+.hideback {
+	background-color: #FFF;
+	position: relative;
+}
+#back-top-left {
+	width: 60px;
+	height: 60px;
+	top: -237px;
+	left: 60px;
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+}
+#back-top-right {
+	width: 60px;
+	height: 60px;
+	top: -343px;
+	left: 140px;
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+}
+#back-top-center {
+	width: 90px;
+	height: 60px;
+	top: -260px;
+	left: 110px;
+}
+#back-center {
+	width: 145px;
+	height: 110px;
+	top: -350px;
+	left: 70px;
+	transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	-webkit-transform: rotate(6deg);
+	-o-transform: rotate(6deg);
+}
+#back-bottom {
+	width: 80px;
+	height: 20px;
+	top: -370px;
+	left: 70px;
+}
