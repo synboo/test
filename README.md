@@ -1,4 +1,4 @@
-# github.com/synboo/test
+# synboo's git repository
 
 <img src="http://tiqav.com/2Jk.jpg">
 
